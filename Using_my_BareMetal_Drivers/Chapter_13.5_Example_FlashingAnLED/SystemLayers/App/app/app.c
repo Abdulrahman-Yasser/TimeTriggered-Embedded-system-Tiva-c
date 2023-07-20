@@ -10,14 +10,12 @@
 
 #include <SystemLayers/App/app/app.h>
 #include "../General_HAL/Digital_Intrface/Static/inc/Digital_Interface.h"
+#include "../General_Mcal/GPT/Static/inc/GPT.h"
 
 void X_Init(void){
-    Dio_Init();
+    Gpt_SetCallBackFunction(Gpt_Channel_Normal_0, X, Gpt_InterruptOverFlow);
 }
 
 void X(void){
-    DigitalInterface_Type* myDio = Digital_Interface_Create(DIO_Channel1_F);
-    while(1){
-        myDio->Write_Toggle(myDio);
-    }
+    Dio_FlipChannel(DIO_Channel1_F);
 }

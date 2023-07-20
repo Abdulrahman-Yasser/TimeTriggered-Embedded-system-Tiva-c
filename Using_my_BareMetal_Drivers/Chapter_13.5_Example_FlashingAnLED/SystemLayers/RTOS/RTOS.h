@@ -9,9 +9,9 @@
 #define RTOS_RTOS_H_
 
 
-#define INTERRUPT_Timer_2_Overflow 5
+#define INTERRUPT_Timer_0_Overflow 50
 
-void Timer_1A_Init(void);
+void Timer_0A_Init(void);
 void EnableInterrupt();
 
 
