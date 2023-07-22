@@ -19,8 +19,11 @@ void system_init(void){
 
 int main(){
     system_init();
-    TRAFFIC_LIGHTS_Init();
-    SCH_Add_Task(TRAFFIC_LIGHTS_Update, 1000, 1000);
+    TasksInit();
+    SCH_Add_Task(TemperatureUpdateTask, 1000, 1000);
+    SCH_Add_Task(AlarmUpdateTask, 1000, 1000);
+    SCH_Add_Task(MainFurnaceController_Init, 1000, 1000);
+    SCH_Add_Task(LCD_UpdateTask, 1000, 10);
     SCH_Init_T0();
     SCH_Start();
     while(1){
