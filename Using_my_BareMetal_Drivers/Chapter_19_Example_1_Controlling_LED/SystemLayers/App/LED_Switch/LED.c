@@ -8,11 +8,11 @@
 
 
 
+#include <SystemLayers/App/LED_Switch/LED.h>
 #include "../General_Common/Mcu_Hw.h"
 #include "../General_Common/Std_Types.h"
 #include "../General_Mcal/DIO/Static/inc/DIO.h"
 
-#include "LED.h"
 
 #define ON 0xff
 #define OFF 0x00
@@ -22,7 +22,7 @@
 
 
 extern uint8 Sw_pressed_G;
-uint8 LED_state_G;
+static uint8 LED_state_G;
 
 /*------------------------------------------------------------------*-
 TRAFFIC_LIGHTS_Init()

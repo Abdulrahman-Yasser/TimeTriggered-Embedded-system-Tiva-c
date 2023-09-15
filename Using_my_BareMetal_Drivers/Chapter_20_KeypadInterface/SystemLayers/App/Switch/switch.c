@@ -16,26 +16,29 @@
 
 
 
-#define SW_PRESSED (1)
-#define SW_THRES (3)
+#define SW_PRESSED_A_ms (500)
+#define SW_PRESSED_B_ms (1000)
+#define SW_THRES (1500)
 
 
 // ------ Public variable definitions ------------------------------
+typedef enum{
+    Switch_State_Released, Switch_State_A, Switch_State_B
+}Switch_State_t;
 
-uint8 Sw_pressed_G ; // The current switch status
+Switch_State_t Sw_pressed_G = 0; // The current switch status
 
 
 // ------ Private variable definitions ------------------------------
 
-static uint8 Sw_press_duration_G;
-static uint8 Sw_blocked_G;
+static uint8 Sw_press_duration_G = 0;
+static uint8 Sw_blocked_G = 0;
 
 static Button_Type* my_button;
 
 
-
 void SWITCH_ON_OFF_Init(void){
-    Sw_pressed_G = 0; // Switch is initially OFF
+    Sw_pressed_G = Switch_State_Released; // Switch is initially OFF
     Sw_press_duration_G = 0;
     Sw_blocked_G = 0;
 }
@@ -50,18 +53,19 @@ void SWITCH_ON_OFF_Update(void){
     my_button->Read(my_button);
     if(my_button->Last_State == SW_PRESSED){
         Sw_press_duration_G += 1;
-        if(Sw_press_duration_G > SW_THRES){
-            Sw_press_duration_G = SW_THRES;
-
-            if(Sw_pressed_G == 1){
-                Sw_pressed_G = 0;
-            }else{
-                Sw_pressed_G = 1;
-            }
-            Sw_blocked_G = 5;
-            return;
+        switch(Sw_press_duration_G){
+        case SW_PRESSED_A_ms :
+            Sw_pressed_G = Switch_State_A;
+            break;
+        case SW_PRESSED_B_ms :
+            Sw_pressed_G = Switch_State_B;
+            break;
+        case SW_THRES :
+            Sw_pressed_G = Switch_State_Released;
+            Sw_press_duration_G = 0;
+            Sw_blocked_G = 2000;    // 5 seconds
+            break;
         }
-        // waiting for the whole duration
         return;
     }
     Sw_press_duration_G = 0;
