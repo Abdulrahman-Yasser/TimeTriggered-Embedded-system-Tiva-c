@@ -8,7 +8,7 @@
 #ifndef SYSTEMLAYERS_APP_SWITCH_H_
 #define SYSTEMLAYERS_APP_SWITCH_H_
 
-#include "../General_HAL/Keypad/Static/inc/keypad.h"
+#include "HAL_Layer/Keypad/Static/inc/keypad.h"
 
 #define KEYPAD_RECV_BUFFER_LENGTH 6
 

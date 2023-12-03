@@ -6,7 +6,7 @@
  */
 
 #include "Alarm.h"
-#include "../General_HAL/Digital_Intrface/Static/inc/Digital_Interface.h"
+#include "HAL_Layer/Digital_Intrface/Static/inc/Digital_Interface.h"
 
 #include "../TemperatureSensor/TemperatureGlobalData.h"
 #include "../TemperatureMonitoringSystem_Cfg.h"

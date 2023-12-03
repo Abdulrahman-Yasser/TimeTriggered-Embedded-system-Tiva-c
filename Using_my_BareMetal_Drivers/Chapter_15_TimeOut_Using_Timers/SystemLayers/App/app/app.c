@@ -10,9 +10,9 @@
 
 #include <SystemLayers/App/app/app.h>
 
-#include "../General_HAL/Digital_Intrface/Static/inc/Digital_Interface.h"
-#include "../General_Mcal/GPT/Static/inc/GPT.h"
-#include "../General_Mcal/DIO/Static/inc/DIO.h"
+#include "HAL_Layer/Digital_Intrface/Static/inc/Digital_Interface.h"
+#include "MCAL_Layer/GPT/Static/inc/GPT.h"
+#include "MCAL_Layer/DIO/Static/inc/DIO.h"
 
 #include <SystemLayers/RTOS/TimeOut/Timeout.h>
 

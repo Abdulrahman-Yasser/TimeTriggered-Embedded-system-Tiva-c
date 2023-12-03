@@ -9,9 +9,9 @@
 
 
 #include <SystemLayers/App/LED_Switch/LED.h>
-#include "../General_Common/Mcu_Hw.h"
-#include "../General_Common/Std_Types.h"
-#include "../General_Mcal/DIO/Static/inc/DIO.h"
+#include "Common/Mcu_Hw.h"
+#include "Common/Std_Types.h"
+#include "MCAL_Layer/DIO/Static/inc/DIO.h"
 
 
 #define ON 0xff

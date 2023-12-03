@@ -8,8 +8,8 @@
 #ifndef RTOS_RTOS_H_
 #define RTOS_RTOS_H_
 
-#include "../General_Common/Std_Types.h"
-#include "../General_Mcal/GPT/Static/inc/GPT_Types.h"
+#include "Common/Std_Types.h"
+#include "MCAL_Layer/GPT/Static/inc/GPT_Types.h"
 #define INTERRUPT_Timer_0_Overflow 1
 #define RTOS_Used_Timer_Channel Gpt_Channel_Normal_0
 

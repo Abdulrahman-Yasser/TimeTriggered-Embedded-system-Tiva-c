@@ -8,7 +8,7 @@
 #ifndef SCH_REPORT_ERROR_H
 #define SCH_REPORT_ERROR_H
 
-#include "../General_Common/Std_Types.h"
+#include "Common/Std_Types.h"
 
 #define ERROR_SCH_TOO_MANY_TASKS                        1
 #define ERROR_SCH_WAITING_FOR_SLAVE_TO_ACK              2

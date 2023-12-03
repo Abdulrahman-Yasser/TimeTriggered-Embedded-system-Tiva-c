@@ -7,8 +7,8 @@
 
 
 #include <SystemLayers/RTOS/RTOS.h>
-#include "../General_Mcal/GPT/Static/inc/GPT.h"
-#include "../General_Mcal/IntCtrl/Static/inc/IntCtrl.h"
+#include "MCAL_Layer/GPT/Static/inc/GPT.h"
+#include "MCAL_Layer/IntCtrl/Static/inc/IntCtrl.h"
 
 #include "SCH_REPORT_ERROR.h"
 

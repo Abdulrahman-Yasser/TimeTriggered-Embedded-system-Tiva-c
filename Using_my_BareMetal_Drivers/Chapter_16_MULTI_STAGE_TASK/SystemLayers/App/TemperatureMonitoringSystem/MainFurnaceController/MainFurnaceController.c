@@ -11,7 +11,7 @@
  * If the furnace does not need more heat it will be Off.
  */
 
-#include "../General_Mcal/DIO/Static/inc/DIO.h"
+#include "MCAL_Layer/DIO/Static/inc/DIO.h"
 #include "MainFurnaceController.h"
 #include "../TemperatureMonitoringSystem_Cfg.h"
 #include "../TemperatureSensor/TemperatureGlobalData.h"

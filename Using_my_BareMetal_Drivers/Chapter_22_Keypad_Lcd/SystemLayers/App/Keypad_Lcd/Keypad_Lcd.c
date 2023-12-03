@@ -12,11 +12,11 @@
 #include "../Keypad_App/Keypad_App.h"
 #include "../Keypad_Lcd/Keypad_Lcd.h"
 
-#include "../General_Common/Mcu_Hw.h"
-#include "../General_Common/Std_Types.h"
+#include "Common/Mcu_Hw.h"
+#include "Common/Std_Types.h"
 
-#include "../General_HAL/LCD/Static/inc/LCD.h"
-#include "../General_HAL/Keypad/Static/inc/keypad.h"
+#include "HAL_Layer/LCD/Static/inc/LCD.h"
+#include "HAL_Layer/Keypad/Static/inc/keypad.h"
 
 static sint8 Char_G;
 extern sint8 LCD_DATA_G[LCD_LINES][LCD_CHARACTERS];

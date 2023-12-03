@@ -7,8 +7,8 @@
 
 
 #include <SystemLayers/RTOS/RTOS.h>
-#include "../General_Mcal/GPT/Static/inc/GPT.h"
-#include "../General_Mcal/IntCtrl/Static/inc/IntCtrl.h"
+#include "MCAL_Layer/GPT/Static/inc/GPT.h"
+#include "MCAL_Layer/IntCtrl/Static/inc/IntCtrl.h"
 
 void Timer_0A_Init(void){
     Gpt_EnableNotification(Gpt_Channel_Normal_0);

@@ -8,7 +8,7 @@
 #ifndef SYSTEMLAYERS_RTOS_TIMEOUT_TIMEOUT_H_
 #define SYSTEMLAYERS_RTOS_TIMEOUT_TIMEOUT_H_
 
-#include "../General_Mcal/GPT/Static/inc/GPT_Types.h"
+#include "MCAL_Layer/GPT/Static/inc/GPT_Types.h"
 
 #define TIMEOUT_USED_TIMER  Gpt_Channel_Normal_1
 

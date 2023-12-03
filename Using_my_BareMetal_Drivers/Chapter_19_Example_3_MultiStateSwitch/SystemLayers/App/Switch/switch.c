@@ -9,10 +9,10 @@
 
 
 #include <SystemLayers/App/Switch/switch.h>
-#include "../General_Common/Mcu_Hw.h"
-#include "../General_Common/Std_Types.h"
+#include "Common/Mcu_Hw.h"
+#include "Common/Std_Types.h"
 
-#include "../General_HAL/Button_Interface/Static/inc/Button.h"
+#include "HAL_Layer/Button_Interface/Static/inc/Button.h"
 
 
 

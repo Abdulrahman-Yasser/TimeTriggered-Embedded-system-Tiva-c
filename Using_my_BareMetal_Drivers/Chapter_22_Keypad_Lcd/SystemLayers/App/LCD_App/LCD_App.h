@@ -11,7 +11,7 @@
 #ifndef SYSTEMLAYERS_APP_LCD_APP_LCD_APP_H_
 #define SYSTEMLAYERS_APP_LCD_APP_LCD_APP_H_
 
-#include "../General_HAL/LCD/Static/inc/LCD_Types.h"
+#include "HAL_Layer/LCD/Static/inc/LCD_Types.h"
 
 #define LCD_Lines 2
 #define LCD_Characters 16

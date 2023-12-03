@@ -9,8 +9,9 @@
 
 
 #include <SystemLayers/App/app/app.h>
-#include "../General_HAL/Digital_Intrface/Static/inc/Digital_Interface.h"
-#include "../General_Mcal/GPT/Static/inc/GPT.h"
+#include "HAL_Layer/Digital_Intrface/Static/inc/Digital_Interface.h"
+#include "MCAL_Layer/DIO/Static/inc/DIO.h"
+#include "MCAL_Layer/GPT/Static/inc/GPT.h"
 
 void X_Init(void){
     Gpt_SetCallBackFunction(Gpt_Channel_Normal_0, X, Gpt_InterruptOverFlow);

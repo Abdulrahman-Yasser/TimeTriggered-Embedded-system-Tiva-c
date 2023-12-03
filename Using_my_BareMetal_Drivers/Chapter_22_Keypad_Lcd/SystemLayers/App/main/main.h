@@ -12,13 +12,13 @@
 #include <SystemLayers/App/Keypad_Lcd/Keypad_Lcd.h>
 #include <SystemLayers/App/LCD_App/LCD_App.h>
 #include <SystemLayers/RTOS/Scheduler/Scheduler.h>
-#include "../General_HAL/LCD/Static/inc/LCD.h"
+#include "HAL_Layer/LCD/Static/inc/LCD.h"
 
-#include "../General_Mcal/PORT/Static/inc/PORT.h"
-#include "../General_Mcal/IntCtrl/Static/inc/IntCtrl.h"
-#include "../General_Mcal/GPT/Static/inc/GPT.h"
-#include "../General_Mcal/PLL/Static/inc/PLL.h"
-#include "../General_Mcal/I2C/Static/Inc/I2C.h"
+#include "MCAL_Layer/PORT/Static/inc/PORT.h"
+#include "MCAL_Layer/IntCtrl/Static/inc/IntCtrl.h"
+#include "MCAL_Layer/GPT/Static/inc/GPT.h"
+#include "MCAL_Layer/PLL/Static/inc/PLL.h"
+#include "MCAL_Layer/I2C/Static/Inc/I2C.h"
 
 
 

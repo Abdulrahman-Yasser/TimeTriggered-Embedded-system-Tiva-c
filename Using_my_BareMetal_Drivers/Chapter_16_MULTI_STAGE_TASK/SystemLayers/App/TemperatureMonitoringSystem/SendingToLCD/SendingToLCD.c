@@ -6,7 +6,7 @@
  */
 
 #include "SendingToLCD.h"
-#include "../General_HAL/LCD/Static/inc/LCD.h"
+#include "HAL_Layer/LCD/Static/inc/LCD.h"
 #include "../TemperatureSensor/TemperatureGlobalData.h"
 
 static LCD_Handler_Type* my_lcd;

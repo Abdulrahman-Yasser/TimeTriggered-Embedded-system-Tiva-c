@@ -8,7 +8,7 @@
 
 #include "LCD_App.h"
 
-#include "../General_HAL/LCD/Static/inc/LCD.h"
+#include "HAL_Layer/LCD/Static/inc/LCD.h"
 
 
 sint8 LCD_DATA_G[LCD_Lines][LCD_Characters] = {"PLEASE WAIT     ","....    ....    "};

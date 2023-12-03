@@ -8,7 +8,7 @@
 #ifndef SYSTEMLAYERS_APP_SWITCH_H_
 #define SYSTEMLAYERS_APP_SWITCH_H_
 
-#include "../General_Mcal/DIO/Static/inc/DIO_Types.h"
+#include "MCAL_Layer/DIO/Static/inc/DIO_Types.h"
 
 #define SWITCH_CHANNEL DIO_Channel0_F
 

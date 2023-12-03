@@ -5,7 +5,7 @@
  *      Author: Abdu
  */
 
-#include "../General_Mcal/GPT/Static/inc/GPT.h"
+#include "MCAL_Layer/GPT/Static/inc/GPT.h"
 #include "Timeout.h"
 
 static void TimeoutISR(void);

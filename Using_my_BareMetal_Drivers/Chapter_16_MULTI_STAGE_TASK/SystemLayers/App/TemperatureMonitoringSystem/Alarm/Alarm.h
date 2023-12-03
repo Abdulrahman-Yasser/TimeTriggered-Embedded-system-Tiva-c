@@ -9,7 +9,7 @@
 #define SYSTEMLAYERS_APP_TEMPERATUREMONITORINGSYSTEM_ALARM_ALARM_H_
 
 #include "Alarm.h"
-#include "../General_Common/Std_Types.h"
+#include "Common/Std_Types.h"
 
 #define ALARM_OVER_TEMPERATURE          1
 #define ALARM_UNDER_TEMPERATURE         0

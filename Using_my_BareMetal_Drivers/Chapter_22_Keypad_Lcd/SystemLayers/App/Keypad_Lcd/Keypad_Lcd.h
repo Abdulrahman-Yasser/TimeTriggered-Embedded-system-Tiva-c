@@ -8,7 +8,7 @@
 #ifndef SYSTEMLAYERS_APP_APP_H_
 #define SYSTEMLAYERS_APP_APP_H_
 
-#include "../General_HAL/LCD/Static/inc/LCD.h"
+#include "HAL_Layer/LCD/Static/inc/LCD.h"
 
 #define LCD_LINES 2
 #define LCD_CHARACTERS 16
